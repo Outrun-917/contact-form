@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Contact form</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main class="main-wrapper">
+      <h1 class="page-title">Contact Us</h1>
+      <form class="contact-form" action="#">
+        <div class="identity-group">
+          <div class="form-group">
+            <label class="form-part-title" for="name"
+              >First Name <span class="green-asterix">*</span></label
+            >
+            <br />
+            <input
+              class="input-border-error"
+              id="name"
+              name="name"
+              type="text"
+            />
+            <p class="input-name-error-message hidden">
+              This field is required
+            </p>
+          </div>
+          <div class="form-group">
+            <label class="form-part-title" for="last-name"
+              >Last Name <span class="green-asterix">*</span></label
+            >
+            <br />
+            <input
+              class="input-border-error"
+              id="last-name"
+              name="last-name"
+              type="text"
+            />
+            <p class="input-last-name-error-message hidden">
+              This field is required
+            </p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-part-title" for="email"
+            >Email Address <span class="green-asterix">*</span></label
+          >
+          <br />
+          <input
+            class="input-border-error"
+            id="email"
+            name="email"
+            type="email"
+          />
+          <p class="input-email-error-message hidden">
+            Please enter a valid email address
+          </p>
+        </div>
+        <div class="query-type">
+          <label for="checkbox"
+            >Query Type <span class="green-asterix">*</span></label
+          >
+          <div class="form-group">
+            <input id="general-enquiry-radio" name="query-type" type="radio" />
+            <label for="general-enquiry-radio">General Enuiry</label>
+          </div>
+          <div class="form-group">
+            <input id="support-request-radio" name="query-type" type="radio" />
+            <label for="support-request-radio">Support Request</label>
+          </div>
+          <p class="input-radio-error-message hidden">
+            Please select a query type
+          </p>
+        </div>
+        <div class="form-group">
+          <label class="form-part-title" for="message-content"
+            >Message <span class="green-asterix">*</span></label
+          >
+          <br />
+          <textarea
+            class="input-border-error"
+            id="message-content"
+            name="message-content"
+          ></textarea>
+          <p class="input-message-error-message hidden">
+            This field is required
+          </p>
+        </div>
+        <div class="form-group">
+          <input
+            id="consent-checkbox"
+            name="consent-checkbox"
+            type="checkbox"
+          />
+          <label for="consent-checkbox">
+            I consent to being contacted by the team
+            <span class="green-asterix">*</span>
+          </label>
+          <p class="input-consent-error-message hidden">
+            To submit this form, please consent to being contacted
+          </p>
+        </div>
+        <button class="form-submit-btn" type="submit">Submit</button>
+      </form>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
