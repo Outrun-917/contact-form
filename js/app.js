@@ -70,4 +70,10 @@ $contactForm.addEventListener("submit", function (e) {
     $messageErrorMessage.classList.add("hidden")
     $inputMessage.classList.remove("input-border-error")
   }
+
+  if ($inputConsentCheckbox.checked === false) {
+    $consentErrorMessage.classList.remove("hidden")
+  } else {
+    $consentErrorMessage.classList.add("hidden")
+  }
 });
